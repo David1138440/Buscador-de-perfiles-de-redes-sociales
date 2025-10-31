@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Grabadora de video en tiempo real",
+  "description": "Aplicación para grabar en tiempo real un acceso a internet sin necesidad de estar conectada",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
