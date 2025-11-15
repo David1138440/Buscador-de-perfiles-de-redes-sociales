@@ -27,4 +27,4 @@ jobs:
         npm install
         grunt
             - nombre: Descargar un artefacto de compilación
-  usos: actions/download-artifact@v6.0.0
+
