@@ -28,21 +28,3 @@ jobs:
         grunt
             - nombre: Descargar un artefacto de compilación
   usos: actions/download-artifact@v6.0.0
-  con:
-    # Nombre del artefacto que se va a descargar. Si no se especifica, se descargarán todos los artefactos de la ejecución.
-    nombre: # opcional
-    # Identificadores de los artefactos a descargar, separados por comas. Se puede usar cualquiera de las entradas `artifact-ids` o `name`, pero no ambas.
-    identificadores de artefactos: # opcional
-    # Ruta de destino. Admite la expansión básica de tildes. Por defecto, $GITHUB_WORKSPACE
-    ruta: # opcional
-    # Patrón glob que coincide con los artefactos que deben descargarse. Se ignora si se especifica un nombre.
-    patrón: # opcional
-    Cuando se encuentran varios artefactos coincidentes, esto modifica el comportamiento de los directorios de destino. Si es verdadero, los artefactos descargados se guardarán en el mismo directorio especificado por la ruta. Si es falso, los artefactos descargados se extraerán en directorios individuales con nombre dentro de la ruta especificada.
-    merge-multiple: # opcional, el valor predeterminado es falso
-    # El token de GitHub utilizado para autenticarse con la API de GitHub. Es necesario para descargar artefactos de un repositorio diferente o de una ejecución de flujo de trabajo diferente. Si no se especifica, la acción intentará descargar los artefactos del repositorio actual y de la ejecución de flujo de trabajo actual.
-    token de GitHub: # opcional
-    # El propietario del repositorio y el nombre del repositorio unidos por "/". Si se especifica github-token, este es el repositorio desde el que se descargarán los artefactos.
-    repositorio: # opcional, el valor predeterminado es ${{ github.repository }}
-    # El ID de la ejecución del flujo de trabajo desde donde se subió el artefacto de descarga deseado. Si se especifica github-token, esta es la ejecución desde la que se descargarán los artefactos.
-    run-id: # opcional, el valor predeterminado es ${{ github.run_id }}
-          
